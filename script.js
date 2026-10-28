@@ -1,4 +1,3 @@
-// 1. Hiệu ứng gõ chữ (Typing Effect) ở phần giới thiệu
 const roles = [
     "Lập trình viên tương lai (Software Developer)",
     "Python & SQL Backend Enthusiast",
@@ -25,7 +24,7 @@ function typeEffect() {
     let speed = isDeleting ? 45 : 90;
 
     if (!isDeleting && charIndex === currentRole.length) {
-        speed = 1800; // Dừng lại khi gõ xong
+        speed = 1800;
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
@@ -35,8 +34,6 @@ function typeEffect() {
 
     setTimeout(typeEffect, speed);
 }
-
-// 2. Chuyển đổi giao diện Sáng / Tối (Dark / Light Mode)
 const themeToggle = document.getElementById("themeToggle");
 const themeIcon = themeToggle.querySelector("i");
 
@@ -48,16 +45,12 @@ themeToggle.addEventListener("click", () => {
         themeIcon.classList.replace("fa-sun", "fa-moon");
     }
 });
-
-// 3. Đóng/Mở Menu trên điện thoại
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
 menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("open");
 });
-
-// 4. Hiệu ứng chạy thanh phần trăm Kỹ năng (Python, CSS, SQL)
 function animateSkills() {
     const progressFills = document.querySelectorAll(".progress-fill");
     progressFills.forEach(bar => {
@@ -65,8 +58,6 @@ function animateSkills() {
         bar.style.width = targetWidth;
     });
 }
-
-// 5. Bộ lọc Dự án theo kỹ năng (All / Python / SQL / CSS)
 const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
 
@@ -87,8 +78,6 @@ filterButtons.forEach(btn => {
         });
     });
 });
-
-// 6. Trình phát nhạc Lo-fi mini bằng Web Audio API
 let audioCtx = null;
 let isPlaying = false;
 let musicInterval = null;
@@ -138,8 +127,6 @@ playMusicBtn.addEventListener("click", () => {
         playMusicBtn.innerHTML = '<i class="fa-solid fa-play"></i> Phát thử';
     }
 });
-
-// 7. Xử lý gửi Form liên hệ
 const contactForm = document.getElementById("contactForm");
 const formFeedback = document.getElementById("formFeedback");
 
@@ -149,8 +136,6 @@ contactForm.addEventListener("submit", (e) => {
     formFeedback.textContent = `Cảm ơn ${name}! Tin nhắn của bạn đã được gửi tới Lâm Quốc Vinh.`;
     contactForm.reset();
 });
-
-// Khởi chạy khi tải trang xong
 window.addEventListener("DOMContentLoaded", () => {
     typeEffect();
     animateSkills();
