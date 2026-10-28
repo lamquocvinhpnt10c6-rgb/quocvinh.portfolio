@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lâm Quốc Vinh | Portfolio Cá Nhân</title>
+    <!-- Font chữ & Icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Thanh điều hướng (Navbar) -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Quốc<span>Vinh.dev</span></a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#hobbies">Sở thích</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn" title="Đổi giao diện Sáng/Tối">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Phần Mở Đầu (Hero Section) -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge"><i class="fa-solid fa-code"></i> Sinh viên CNTT Năm 3</span>
+                <h1>Xin chào, mình là <br><span class="highlight">Lâm Quốc Vinh</span></h1>
+                <h2 class="typing-line">Định hướng: <span id="typingText"></span><span class="cursor">|</span></h2>
+                <p>
+                    Một sinh viên năm 3 đam mê công nghệ với nền tảng vững chắc về <strong>Python, CSS và SQL</strong>. 
+                    Mình luôn khao khát xây dựng những ứng dụng tối ưu, giao diện trực quan và hướng tới mục tiêu trở thành một <strong>Lập trình viên chuyên nghiệp</strong>.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-laptop-code"></i> Xem Dự Án</a>
+                    <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Liên Hệ Ngay</a>
+                </div>
+                <!-- Đã cập nhật link Facebook và GitHub chuẩn của bạn -->
+                <div class="social-icons">
+                    <a href="https://github.com/lamquocvinhpnt10c6-rgb" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/share/1G9LY78yNE/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="mailto:lamquocvinh.pnt.10c6@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Khung ảnh cá nhân -->
+            <div class="hero-visual">
+                <div class="avatar-card">
+                    <div class="avatar-frame">
+                        <!-- Hãy đặt file ảnh của bạn vào chung thư mục và đổi tên thành avatar.jpg -->
+                        <img src="avatar.jpg" alt="Lâm Quốc Vinh" id="myAvatar">
+                    </div>
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-badge">
+                        <i class="fa-solid fa-circle-check"></i> Sẵn sàng kết nối
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần Giới Thiệu (About Section) -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Về Bản Thân Mình</h2>
+                <p>Hành trình học tập và mục tiêu phát triển sự nghiệp</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fa-solid fa-user-graduate card-icon"></i>
+                    <h3>Học Vấn Hiện Tại</h3>
+                    <p>Đang là <strong>Sinh viên năm 3 ngành Công nghệ Thông tin</strong>. Mình tập trung rèn luyện tư duy thuật toán, thiết kế cơ sở dữ liệu và phát triển giao diện web hiện đại.</p>
+                </div>
+
+                <div class="about-card">
+                    <i class="fa-solid fa-rocket card-icon"></i>
+                    <h3>Mục Tiêu Tương Lai</h3>
+                    <p>Trở thành một <strong>Lập trình viên (Full-stack / Backend Developer)</strong> có khả năng giải quyết bài toán thực tế, viết code sạch, tối ưu hiệu năng truy vấn dữ liệu và trải nghiệm người dùng.</p>
+                </div>
+
+                <div class="about-card">
+                    <i class="fa-solid fa-compass card-icon"></i>
+                    <h3>Phong Cách Sống</h3>
+                    <p>Yêu thích sự dịch chuyển, <strong>du lịch</strong> đến những vùng đất mới, <strong>khám phá</strong> công nghệ và tận hưởng những bản <strong>nhạc</strong> giúp cân bằng cuộc sống và khơi nguồn sáng tạo khi lập trình.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần Kỹ Năng (Skills Section) -->
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kỹ Năng Chuyên Môn</h2>
+                <p>3 mảng công nghệ cốt lõi mình thành thạo và sử dụng thường xuyên nhất</p>
+            </div>
+
+            <div class="skills-container">
+                <!-- Python -->
+                <div class="skill-box">
+                    <div class="skill-header">
+                        <div class="skill-icon python-color"><i class="fa-brands fa-python"></i></div>
+                        <div>
+                            <h3>Python</h3>
+                            <span>Lập trình Backend & Xử lý dữ liệu</span>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="85%"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>OOP</span>
+                        <span>Cấu trúc dữ liệu & Giải thuật</span>
+                        <span>Flask / FastAPI</span>
+                        <span>Automation Script</span>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-box">
+                    <div class="skill-header">
+                        <div class="skill-icon css-color"><i class="fa-brands fa-css3-alt"></i></div>
+                        <div>
+                            <h3>CSS3 & Giao diện Web</h3>
+                            <span>Thiết kế UI/UX & Responsive</span>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="90%"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Flexbox & Grid</span>
+                        <span>Responsive Design</span>
+                        <span>CSS Animations</span>
+                        <span>HTML5 chuẩn SEO</span>
+                    </div>
+                </div>
+
+                <!-- SQL -->
+                <div class="skill-box">
+                    <div class="skill-header">
+                        <div class="skill-icon sql-color"><i class="fa-solid fa-database"></i></div>
+                        <div>
+                            <h3>SQL (Cơ sở dữ liệu)</h3>
+                            <span>Thiết kế & Truy vấn hệ quản trị CSDL</span>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-width="85%"></div>
+                    </div>
+                    <div class="skill-tags">
+                        <span>SQL Server / MySQL</span>
+                        <span>Thiết kế ERD</span>
+                        <span>Joins & Subqueries</span>
+                        <span>Stored Procedures / Triggers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần Dự Án (Projects Section) -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Dự Án Học Tập & Cá Nhân</h2>
+                <p>Ứng dụng thực tế từ Python, CSS và SQL</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="sql">SQL</button>
+                <button class="filter-btn" data-filter="css">CSS / Web</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="python sql">
+                    <div class="project-badge">Python + SQL</div>
+                    <h3>Hệ Thống Quản Lý Sinh Viên & Điểm Danh</h3>
+                    <p>Ứng dụng quản lý hồ sơ sinh viên, lớp học phần và thống kê chuyên cần tự động kết nối cơ sở dữ liệu quan hệ.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>SQL Server</span>
+                        <span>CRUD</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="css sql">
+                    <div class="project-badge">CSS + SQL</div>
+                    <h3>Nền Tảng Đặt Sân Cầu Lông Trực Tuyến</h3>
+                    <p>Thiết kế giao diện người dùng hiện đại, responsive với CSS Grid/Flexbox kết hợp mô hình cơ sở dữ liệu quản lý lịch đặt sân.</p>
+                    <div class="project-tech">
+                        <span>HTML5/CSS3</span>
+                        <span>SQL Database</span>
+                        <span>UI/UX</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="css">
+                    <div class="project-badge">CSS3 & Web</div>
+                    <h3>Website Quản Lý & Khám Phá Tour Du Lịch</h3>
+                    <p>Trang web giới thiệu các địa điểm du lịch nổi tiếng, tích hợp hiệu ứng chuyển động mượt mà bằng CSS và bố cục chuẩn trên di động.</p>
+                    <div class="project-tech">
+                        <span>CSS3 Animation</span>
+                        <span>Responsive</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần Sở Thích (Hobbies Section) -->
+    <section id="hobbies" class="section bg-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Góc Sở Thích & Cảm Hứng</h2>
+                <p>Những điều tạo nên năng lượng tích cực cho Lâm Quốc Vinh ngoài giờ code</p>
+            </div>
+
+            <div class="hobbies-grid">
+                <!-- Nghe nhạc -->
+                <div class="hobby-card">
+                    <div class="hobby-icon"><i class="fa-solid fa-headphones-simple"></i></div>
+                    <h3>Nghe Nhạc</h3>
+                    <p>Âm nhạc là người bạn đồng hành mỗi khi mình viết code. Đặc biệt là những giai điệu Lo-fi, Indie và Ballad nhẹ nhàng giúp tăng sự tập trung.</p>
+                    <div class="music-box">
+                        <div class="music-info">
+                            <i class="fa-solid fa-compact-disc" id="discIcon"></i>
+                            <span id="musicStatus">Giai điệu Coding Chill</span>
+                        </div>
+                        <button id="playMusicBtn" class="btn-music">
+                            <i class="fa-solid fa-play"></i> Phát thử
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Du lịch -->
+                <div class="hobby-card">
+                    <div class="hobby-icon"><i class="fa-solid fa-plane-departure"></i></div>
+                    <h3>Du Lịch</h3>
+                    <p>Mình thích xách ba lô lên và đi đến những vùng đất mới, ngắm nhìn thiên nhiên, biển cả và núi rừng để làm mới bản thân sau những kỳ thi căng thẳng.</p>
+                    <div class="hobby-tags">
+                        <span><i class="fa-solid fa-location-dot"></i> Đà Lạt</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Vũng Tàu</span>
+                        <span><i class="fa-solid fa-location-dot"></i> Nha Trang</span>
+                    </div>
+                </div>
+
+                <!-- Khám phá -->
+                <div class="hobby-card">
+                    <div class="hobby-icon"><i class="fa-solid fa-compass"></i></div>
+                    <h3>Khám Phá</h3>
+                    <p>Luôn tò mò với thế giới xung quanh: từ việc tìm hiểu các công nghệ phần mềm mới, đọc sách kỹ năng cho đến trải nghiệm văn hóa, ẩm thực địa phương.</p>
+                    <div class="hobby-tags">
+                        <span><i class="fa-solid fa-microchip"></i> Công nghệ mới</span>
+                        <span><i class="fa-solid fa-book-open"></i> Đọc sách</span>
+                        <span><i class="fa-solid fa-camera"></i> Trải nghiệm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần Liên Hệ (Contact Section) -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kết Nối Với Mình</h2>
+                <p>Sẵn sàng trao đổi về cơ hội thực tập, dự án học tập hoặc giao lưu kết bạn</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-user"></i>
+                        <div>
+                            <h4>Họ và tên</h4>
+                            <p>Lâm Quốc Vinh (Sinh viên năm 3)</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>lamquocvinh.pnt.10c6@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Khu vực</h4>
+                            <p>TP. Hồ Chí Minh, Việt Nam</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="senderName" placeholder="Tên của bạn..." required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="senderEmail" placeholder="Email liên hệ..." required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="senderMessage" rows="4" placeholder="Lời nhắn gửi cho Vinh..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fa-solid fa-paper-plane"></i> Gửi Tin Nhắn
+                    </button>
+                    <p id="formFeedback" class="form-feedback"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chân trang (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Thiết kế & Lập trình bởi <strong>Lâm Quốc Vinh</strong>. Built with HTML, CSS & JS.</p>
+        </div>
+    </footer>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
